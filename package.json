@@ -1,0 +1,47 @@
+{
+  "name": "shelly-adapter",
+  "display_name": "shelly",
+  "version": "0.1.0",
+  "description": "shelly adapter add-on for Mozilla WebThings Gateway",
+  "author": "Victor Romero",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "mozilla",
+    "iot",
+    "adapter",
+    "shelly"
+  ],
+  "homepage": "https://github.com/vromero/shelly-adapter",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vromero/shelly-adapter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vromero/shelly-adapter/issues"
+  },
+  "dependencies": {
+    "node-fetch": "^2.3.0",
+    "dnssd": "^0.4.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.12.0"
+  },
+  "files": [
+    "LICENSE",
+    "SHA256SUMS",
+    "index.js"
+  ],
+  "moziot": {
+    "api": {
+      "min": 2,
+      "max": 2
+    },
+    "plugin": true,
+    "exec": "{nodeLoader} {path}"
+  }
+}

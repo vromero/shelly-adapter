@@ -1,0 +1,8 @@
+*.swp
+*.tgz
+*~
+/node_modules/
+SHA256SUMS
+.data
+.idea
+package-lock.json
